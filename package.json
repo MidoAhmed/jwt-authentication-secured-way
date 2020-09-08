@@ -1,0 +1,11 @@
+{
+  "name": "jwt-authentication-secured-way",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/MidoAhmed/jwt-authentication-secured-way.git",
+  "author": "mohamed <med.elkhalki0@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
