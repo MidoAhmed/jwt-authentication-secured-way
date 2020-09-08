@@ -7,7 +7,8 @@
     "start": "nodemon --exec ./node_modules/@babel/node/bin/babel-node.js src/index",
     "build": "npx babel src -d build",
     "run:build": "node build/index",
-    "test": "jest"
+    "test": "jest",
+    "lint": "npx eslint --fix *.js src test"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,9 @@
     "@babel/core": "^7.11.6",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
+    "eslint": "6.2.2",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.18.2",
     "jest": "^26.4.2",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
