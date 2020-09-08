@@ -1,7 +1,6 @@
 import React from 'react';
 
 function App() {
-  const test;
   return (
     <div className="App">
       <header className="App-header">
@@ -12,6 +11,7 @@ function App() {
           {' '}
           and save to reload.
         </p>
+        <h1>Hello World!</h1>
       </header>
     </div>
   );
