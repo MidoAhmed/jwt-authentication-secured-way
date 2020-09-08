@@ -8,7 +8,8 @@
     "build": "npx babel src -d build",
     "run:build": "node build/index",
     "test": "jest",
-    "lint": "npx eslint --fix *.js src test"
+    "lint": "npx eslint --fix *.js src test",
+    "precommit": "lint-staged && yarn test"
   },
   "keywords": [],
   "author": "",
@@ -26,8 +27,15 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
     "supertest": "^4.0.2"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "yarn lint",
+      "git add"
+    ]
   }
 }

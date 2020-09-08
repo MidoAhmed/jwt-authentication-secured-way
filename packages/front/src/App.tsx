@@ -11,6 +11,7 @@ function App() {
           {' '}
           and save to reload.
         </p>
+        <h1>Hello World!</h1>
       </header>
     </div>
   );
