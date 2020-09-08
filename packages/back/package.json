@@ -26,7 +26,6 @@
     "eslint": "6.2.2",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.18.2",
-    "husky": "^4.3.0",
     "jest": "^26.4.2",
     "lint-staged": "^10.3.0",
     "nodemon": "^2.0.4",
