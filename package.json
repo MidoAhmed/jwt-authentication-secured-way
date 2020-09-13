@@ -8,10 +8,5 @@
   "devDependencies": {
     "husky": "^4.3.0",
     "lerna": "^3.22.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx lerna run --concurrency 1 --stream precommit"
-    }
   }
 }
