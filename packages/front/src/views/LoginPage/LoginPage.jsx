@@ -101,7 +101,7 @@ class LoginPage extends React.Component {
             Cookies.create('token', token, null);
             
             this.props.dispatch(login(userData));
-            this.props.history.push('/');
+            this.props.history.push("/profile-page");
         }
     });
   }

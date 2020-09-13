@@ -49,28 +49,6 @@ function HeaderLinks({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
-      <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="Pages"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              Landing Page
-            </Link>,
-            <Link to="/profile-page" className={classes.dropdownLink}>
-              Profile Page
-            </Link>,
-            <Link to="/components" className={classes.dropdownLink}>
-              Components
-            </Link>
-          ]}
-        />
-      </ListItem>
       
         <ListItem className={classes.listItem}>
             <Link to={props.state.user ? "/profile-page" : "/login-page"}>
