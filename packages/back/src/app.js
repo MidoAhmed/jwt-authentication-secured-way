@@ -16,10 +16,17 @@ app.get('/', (req, res) => res.json({
 
 const jwtSecret = 'secret123';
 
-app.get('/api/v1/auth/signin', (req, res) => {
-  res.json({
-    token: jsonwebtoken.sign({ user: 'johndoe' }, jwtSecret),
-  });
+app.post('/api/v1/auth/signin', (req, res) => {
+  const user = {
+    _id: 943242,
+    email: 'admin@test.com',
+    name: 'admin',
+    surname: 'admin',
+    token: jsonwebtoken.sign({ user: 'johndoe' }, jwtSecret)
+  };
+
+
+  res.json({user});
 });
 
 app.use(jwt({ secret: jwtSecret, algorithms: ['HS256'] }));
